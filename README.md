@@ -2,6 +2,8 @@
 
 I found I was often writing the same code over again for Node projects so I made this template to ease the repetition.
 
+The template uses the following...
+
 <b>Koa</b> as a web framework.
 
 <b>Sequelize</b> as the data storage.
