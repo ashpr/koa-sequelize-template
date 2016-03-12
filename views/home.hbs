@@ -1,0 +1,5 @@
+{{#if @koa.req.user}}
+	You are logged in as {{@koa.req.user.username}}. Maybe you would like to <a href="/logout">Log out?</a>
+{{else}}
+	Maybe you would like to <a href="/login">Log in</a> or  <a href="/register">Register</a>
+{{/if}}

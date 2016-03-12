@@ -1,0 +1,38 @@
+server:
+  build: .
+  expose:
+    - "3000"
+  volumes:
+    - .:/var/www/nodeapp/app
+  ports:
+    - "3000:3000"
+  links:
+    - db:db
+    - redis:redis
+  environment:
+    - PORT=3000
+    - KEYS=hello,there
+    - DB_DIALECT=mariadb
+    - DB_HOST=db
+    - DB_DATABASE=database
+    - DB_PORT=3306
+    - DB_USER=databaseuser
+    - DB_PASSWORD=databasepassword
+    - FORCE_SYNC=false
+    - REDIS_HOST=redis
+    - REDIS_PORT=6379
+
+db:
+  image: mariadb:latest
+  expose:
+    - "3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=secretRoot
+    - MYSQL_DATABASE=database
+    - MYSQL_USER=databaseuser
+    - MYSQL_PASSWORD=databasepassword
+
+redis:
+  image: redis
+  expose:
+    - "6379"
