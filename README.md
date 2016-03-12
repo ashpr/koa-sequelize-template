@@ -17,6 +17,7 @@ The template uses the following...
 A Vagrant file is included.
 
 <b>Option A:</b> Use docker-compose to file up Node, MariaDB and Redis server instances.
+
 <b>Option B:</b> `npm install` in the working directory and setup the config.js file.
 
 A sample project is included for simple authentication and registration.
