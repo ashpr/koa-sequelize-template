@@ -10,7 +10,7 @@ The template uses the following...
 
 <b>Handlebars</b> for views.
 
-<b>Passport</b> for authorization.
+<b>Passport</b> for authentication.
 
 ## Installation
 
@@ -19,7 +19,7 @@ A Vagrant file is included.
 <b>Option A:</b> Use docker-compose to file up Node, MariaDB and Redis server instances.
 <b>Option B:</b> `npm install` in the working directory and setup the config.js file.
 
-A sample project is included for simple authorization and registration.
+A sample project is included for simple authentication and registration.
 
 ## Usage
 
