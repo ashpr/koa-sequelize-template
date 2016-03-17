@@ -22,6 +22,12 @@ A Vagrant file is included.
 
 A sample project is included for simple authentication and registration.
 
+## TODO
+
+Tests!
+
+Build the latest wwwsrc in the Dockerfile with gulp and exclude wwwbuild from git to avoid merge conflicts.
+
 ## Usage
 
 Custom js and scss files should go in the wwwsrc folder. Following the format `wwwsrc/<js|scss>/<name>/`. 
