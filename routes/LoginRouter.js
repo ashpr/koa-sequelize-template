@@ -7,6 +7,11 @@ router.get("/", function *(){
 });
 
 router.post("/", function *(){
+	/*
+		For ES6 Destructuring. When supported:
+		{ username, password } = this.request.body
+	 */
+	
 	var username = this.request.body.username;
 	var password = this.request.body.password;
 
