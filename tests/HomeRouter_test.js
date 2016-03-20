@@ -1,5 +1,13 @@
 Feature('HomeRouter');
 
+Before((I) => {
+	/*
+		Set up some test data here:
+		ie.
+			I.createUser("jim", "newpassword");
+	*/
+})
+
 Scenario('Home page renders', (I, Host) => {
   I.amOnPage(Host.getFullUrl("/"));
   I.see('Maybe you would like to Log in or Register');

@@ -16,7 +16,7 @@ class Db extends Helper {
 
   /*
   	Expand with the following...
-  	
+
 	createUser(username, password) {
 		return db.models.User.create({
 			username:username,
