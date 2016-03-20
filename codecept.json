@@ -1,0 +1,21 @@
+{
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "output": "./tests/output",
+  "helpers": {
+    "WebDriverIO": {
+      "host": "192.168.99.101",
+      "port":4444,
+      "browser": "chrome"
+    },
+    "Db": {
+      "require": "./tests/helpers/db_helper.js"
+    }
+  },
+  "bootstrap": "./tests/bootstrap.js",
+  "mocha": {},
+  "include":{
+    "Host":"./tests/include/host.js"
+  },
+  "name": "koa-sequelize-template"
+}

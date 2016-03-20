@@ -16,6 +16,7 @@
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.3.0",
+    "bluebird": "^3.3.4",
     "handlebars": "^4.0.5",
     "http": "0.0.0",
     "kcors": "^1.1.0",
@@ -30,21 +31,31 @@
     "koa-static": "^2.0.0",
     "mysql": "^2.10.2",
     "passport-local": "^1.0.0",
+    "redis": "^2.5.2",
     "sequelize": "^3.19.3",
     "swag": "^0.7.0"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
+    "codeceptjs": "^0.2.8",
+    "fakeredis": "^1.0.2",
+    "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-flatten": "^0.2.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "ip": "^1.1.2",
+    "node-env-file": "^0.1.8",
+    "sqlite3": "^3.1.1"
   },
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "gulp-build": "./node_modules/.bin/gulp build",
+    "mocha": "mocha \"tests/integration/*.js\"",
+    "docker-selenium": "docker-compose -f docker-compose.selenium.yml up"
   },
   "readme": "ERROR: No README data found!"
 }

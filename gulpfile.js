@@ -74,4 +74,5 @@ gulp.task('browsersync', function(cb){
 });
 
 // The default task
-gulp.task('default', ['scss', 'js', 'browsersync', 'watch']);
+gulp.task('build', ['scss', 'js']);
+gulp.task('default', ['build', 'browsersync', 'watch']);
