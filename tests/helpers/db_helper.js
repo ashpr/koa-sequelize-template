@@ -13,6 +13,17 @@ class Db extends Helper {
 	    	return db;
 		});
   } 
+
+  /*
+  	Expand with the following...
+  	
+	createUser(username, password) {
+		return db.models.User.create({
+			username:username,
+			password:password
+		})
+	}
+  */
 }
 
 module.exports = Db;
