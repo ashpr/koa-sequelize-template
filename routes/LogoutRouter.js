@@ -3,7 +3,7 @@ const db = require("../_db");
 const User = db.models.User;
 
 router.get("/", function *(){
-	yield this.logout();
+	this.logout();
 	yield this.render("logout");
 });
 
